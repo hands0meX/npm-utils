@@ -1,0 +1,36 @@
+{
+  "name": "npm-node",
+  "version": "1.0.0",
+  "description": "npm-node -tpl",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/test.ts",
+    "init": "cp src/config/config.local.ts src/config/config.ts",
+    "dev": "nodemon src/app.ts",
+    "start": "pm2 start dist/src/app.js -i 1 --name art-server && pm2 logs",
+    "bstart": "npm run build && npm run start",
+    "stop": "pm2 stop art-server",
+    "restart": "npm run stop && npm run start",
+    "build": "./bin/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hands0meX/template.git"
+  },
+  "keywords": [
+    "typescript",
+    "npm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/hands0meX/template/issues"
+  },
+  "homepage": "https://github.com/hands0meX/template#readme"
+}
