@@ -2,7 +2,7 @@
 	"name": "@car_han/express-log",
 	"version": "1.0.1",
 	"description": "npm-node -tpl",
-	"main": "dist/index.js",
+	"main": "dist/src/index.js",
 	"scripts": {
 		"publish": "tsc && npm publish --access public"
 	},
