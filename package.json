@@ -4,7 +4,7 @@
 	"description": "npm-node -tpl",
 	"main": "dist/index.js",
 	"scripts": {
-		"publish": "tsc && npm publish"
+		"publish": "tsc && npm publish --access public"
 	},
 	"repository": {
 		"type": "git",
