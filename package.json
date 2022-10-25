@@ -27,5 +27,6 @@
 	"bugs": {
 		"url": "https://github.com/hands0meX/template/issues"
 	},
-	"homepage": "https://github.com/hands0meX/template#readme"
+	"homepage": "https://github.com/hands0meX/template#readme",
+	"types": "src/index.d.ts"
 }
