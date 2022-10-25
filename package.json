@@ -2,9 +2,10 @@
 	"name": "@car_han/utils",
 	"version": "1.0.3",
 	"description": "npm-node -tpl",
-	"main": "dist/src/index.js",
+	"main": "lib/src/index.js",
 	"scripts": {
 		"patch": "npm version patch",
+		"build": "tsc",
 		"publish": "tsc && npm publish --access public"
 	},
 	"repository": {
