@@ -4,7 +4,8 @@
 	"description": "npm-node -tpl",
 	"main": "dist/src/index.js",
 	"scripts": {
-		"publish:p": "tsc && npm version patch && npm publish --access public"
+		"patch": "npm version patch",
+		"publish": "tsc && npm publish --access public"
 	},
 	"repository": {
 		"type": "git",

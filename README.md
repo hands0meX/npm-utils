@@ -1,1 +1,5 @@
-### 测试文件的函数的模块
+### 使用
+``` ts
+    import { Console } from '@car_han/utils';
+    Console.DIR = process.cwd();        // set when you boot
+```
