@@ -30,5 +30,5 @@
 		"url": "https://github.com/hands0meX/template/issues"
 	},
 	"homepage": "https://github.com/hands0meX/template#readme",
-	"types": "src/index.d.ts"
+	"types": "lib/src/index.d.ts"
 }
