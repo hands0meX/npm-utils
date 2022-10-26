@@ -6,7 +6,8 @@
 	"scripts": {
 		"patch": "npm version patch",
 		"build": "tsc",
-		"publish": "tsc && npm publish --access public"
+		"publish": "tsc && npm publish --access public",
+		"test": "nodemon ./examples/test.ts"
 	},
 	"repository": {
 		"type": "git",

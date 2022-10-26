@@ -1,2 +1,3 @@
 import { Console } from "../src/index";
-Console.log(123);
+Console.DIR = process.cwd();
+Console.table(123);
