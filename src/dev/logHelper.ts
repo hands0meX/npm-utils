@@ -26,3 +26,6 @@ export class Console {
 		console.log(applyFn);
 	}
 }
+
+const handler = {};
+const proxy = new Proxy(Console, handler);
