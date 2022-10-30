@@ -1,4 +1,11 @@
-export class Console {
+interface _C {
+	[key: string]: () => unknown
+}
+export class Console{
+	[x: string]: any;
+	[x: number]: any;
+	[x: symbol]: any;
+	static temp: any;
 	static DIR = "";
 
 	/**
@@ -16,16 +23,34 @@ export class Console {
 	}
 
 	static log(...args: unknown[]) {
-		const applyFn = this.getInfo();
+		Console.temp = args;
+		const applyFn = Console.getInfo();
 		console.log(`=== ${applyFn} ===`, ...args);
 	}
 
-	static table(...args: unknown[]) {
-		const applyFn = this.getInfo();
-		console.table(args);
-		console.log(applyFn);
+	// static table(...args: unknown[]) {
+	// 	const applyFn = this.getInfo();
+	// 	console.table(args);
+	// 	console.log(applyFn);
+	// }
+	log(...args: unknown[]) {
+		Console.temp = args;
+		const applyFn = Console.getInfo();
+		console.log(`=== ${applyFn} ===`, ...args);
 	}
 }
 
-const handler = {};
+const handler = {
+	get(target:Console, prop: string, reciver: any) {
+		if(prop in console) {
+			setTimeout(() => {
+				console[prop](...Console.temp);
+			}, 0);
+		}
+		return Reflect.get(target, prop);
+	}
+};
 const proxy = new Proxy(Console, handler);
+
+proxy.log(123456);
+proxy.table(123);
