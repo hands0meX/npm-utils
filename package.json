@@ -1,13 +1,14 @@
 {
 	"name": "@car_han/utils",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "npm-node -tpl",
 	"main": "lib/src/index.js",
 	"scripts": {
 		"patch": "npm version patch",
 		"build": "tsc",
 		"publish": "tsc && npm publish --access public",
-		"test": "nodemon ./examples/test.ts"
+		"test": "nodemon ./examples/test.ts",
+		"dev": "nodemon ./src/dev/logHelper.ts"
 	},
 	"repository": {
 		"type": "git",
