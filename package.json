@@ -7,7 +7,7 @@
 		"patch": "npm version patch",
 		"build": "tsc",
 		"publish": "tsc && npm publish --access public",
-		"test": "nodemon ./examples/test.ts",
+		"test": "ts-node ./examples/test.ts",
 		"dev": "nodemon ./src/dev/logHelper.ts"
 	},
 	"repository": {
@@ -16,7 +16,10 @@
 	},
 	"keywords": [
 		"typescript",
-		"npm"
+		"ts",
+		"express",
+		"log",
+		"typeof"
 	],
 	"author": "hsx",
 	"license": "ISC",
