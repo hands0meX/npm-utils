@@ -1,6 +1,6 @@
 {
 	"name": "@car_han/utils",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "npm-node -tpl",
 	"main": "lib/src/index.js",
 	"scripts": {

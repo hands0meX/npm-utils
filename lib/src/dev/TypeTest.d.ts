@@ -1,11 +1,11 @@
 declare class _ {
     static isFn(test: unknown): boolean;
     static isObj(test: unknown): boolean;
-    static isValidObj(test: unknown): number;
+    static isValidObj(test: unknown): boolean;
     static isArray(test: unknown): boolean;
-    static isValidArray(test: any): any;
+    static isValidArray(test: any): boolean;
     static isNum(test: unknown): boolean;
     static isStr(test: unknown): boolean;
-    static isValidStr(test: any): any;
+    static isValidStr(test: any): boolean;
 }
 export { _ };
