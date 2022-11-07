@@ -1,3 +1,3 @@
 import { Console } from "./logHelper";
-
-export { Console };
+import { _ } from "./TypeTest";
+export { Console, _ };
