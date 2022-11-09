@@ -1,7 +1,7 @@
 #### Usage
 - [LOG📖](#LOG)
 - [TYPE_TEST🤔](#type_test)
-
+- [Timer⌚️](#timer)
 ##### LOG
 ``` ts
     import { Console } from '@car_han/utils';
@@ -73,16 +73,16 @@ testTimer = setInterval(() => {
 	throttleImplFn("throttle", "bar");
 }, 16);
 
-bubble count 1 at timerFn (/examples/test.ts:41:10)
-params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
-bubble count 2 at timerFn (/examples/test.ts:41:10)
-params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
-bubble count 3 at timerFn (/examples/test.ts:41:10)
-params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
-bubble count 4 at timerFn (/examples/test.ts:41:10)
-params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
-bubble count 5 at timerFn (/examples/test.ts:41:10)
-params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
-bubble count 6 at timerFn (/examples/test.ts:41:10)
-params [ 'debounce', 'foo' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 1 at timerFn (/examples/test.ts:41:10)
+// params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 2 at timerFn (/examples/test.ts:41:10)
+// params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 3 at timerFn (/examples/test.ts:41:10)
+// params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 4 at timerFn (/examples/test.ts:41:10)
+// params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 5 at timerFn (/examples/test.ts:41:10)
+// params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
+// bubble count 6 at timerFn (/examples/test.ts:41:10)
+// params [ 'debounce', 'foo' ] at timerFn (/examples/test.ts:42:10)
 ```
