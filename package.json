@@ -19,7 +19,8 @@
 		"ts",
 		"express",
 		"log",
-		"typeof"
+		"typeof",
+		"timer"
 	],
 	"author": "hsx",
 	"license": "ISC",
