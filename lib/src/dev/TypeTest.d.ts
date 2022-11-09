@@ -1,4 +1,4 @@
-declare class _ {
+declare class T {
     static isFn(test: unknown): boolean;
     static isObj(test: unknown): boolean;
     static isValidObj(test: unknown): boolean;
@@ -8,4 +8,4 @@ declare class _ {
     static isStr(test: unknown): boolean;
     static isValidStr(test: any): boolean;
 }
-export { _ };
+export { T };
