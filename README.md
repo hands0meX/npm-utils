@@ -1,8 +1,8 @@
 #### Usage
 - [LOG📖](#LOG)
 - [TYPE_TEST🤔](#type_test)
- - [is*](#is)
- - [typeOf](#typeof)
+    - [is*](#is)
+    - [typeOf](#typeof)
 - [Time📅](#time)
 - [Timer⌚️](#timer)
 
