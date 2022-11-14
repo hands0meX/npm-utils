@@ -35,6 +35,16 @@ Console.log(T.isValidStr(g));
 // true at Object.<anonymous> (/examples/test.ts:29:9)
 // 3 at Object.<anonymous> (/examples/test.ts:30:9)
 
+// types
+Console.log(T.typeOf(Symbol("a")));
+Console.log(T.typeOf(new Date()));
+Console.log(T.typeOf(undefined));
+Console.log(T.typeOf(null));
+// symbol at Object.<anonymous> (/examples/test.ts:39:9)
+// date at Object.<anonymous> (/examples/test.ts:40:9)
+// undefined at Object.<anonymous> (/examples/test.ts:41:9)
+// null at Object.<anonymous> (/examples/test.ts:42:9)
+
 // Timer
 let bubbleCount = 0;
 const timerFn = (...args) => {

@@ -1,6 +1,7 @@
 #### Usage
 - [LOG📖](#LOG)
 - [TYPE_TEST🤔](#type_test)
+- [Time📅] (#time)
 - [Timer⌚️](#timer)
 ##### LOG
 ``` ts
@@ -23,6 +24,8 @@
 > 
 
 ##### TYPE_TEST
+###### is* 
+> Determine the type of determination
 ``` ts
 // _ TYPE_TEST
 const fn = () => {};
@@ -41,7 +44,6 @@ Console.log(T.isValidArray(d));
 Console.log(T.isValidObj(e));
 Console.log(T.isStr(f));
 Console.log(T.isValidStr(g));
-
 // true at Object.<anonymous> (/examples/test.ts:23:9)
 // true at Object.<anonymous> (/examples/test.ts:24:9)
 // true at Object.<anonymous> (/examples/test.ts:25:9)
@@ -51,6 +53,41 @@ Console.log(T.isValidStr(g));
 // true at Object.<anonymous> (/examples/test.ts:29:9)
 // true at Object.<anonymous> (/examples/test.ts:30:9)
 ```
+###### typeOf
+> When you are not sure about the type, determine the type it belongs to
+**includes** 
+ - string
+ - object
+ - array
+ - number
+ - null
+ - undefined
+ - regex
+ - date
+``` ts
+// typeOf 
+Console.log(T.typeOf(Symbol("a")));
+Console.log(T.typeOf(new Date()));
+Console.log(T.typeOf(undefined));
+Console.log(T.typeOf(null));
+// symbol at Object.<anonymous> (/examples/test.ts:39:9)
+// date at Object.<anonymous> (/examples/test.ts:40:9)
+// undefined at Object.<anonymous> (/examples/test.ts:41:9)
+// null at Object.<anonymous> (/examples/test.ts:42:9)
+```
+
+
+##### Time
+> Y => Year, M => Month, D => Date, h => hour, m: minutes, s: seconds.
+```ts
+console.log(Time.datefmt(new Date())); // default
+// 2022/11/14 15:42:20
+console.log(Time.datefmt(new Date(), "D-m")); // change fmtPattern
+// 14/45
+console.log(Time.datefmt(new Date(), undefined, ":*")); // change fmt modifer
+// 2022:11:14 15*47*13
+```
+
 
 ##### Timer
 ```ts

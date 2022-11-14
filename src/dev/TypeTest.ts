@@ -1,4 +1,24 @@
 class T {
+	/**
+	 * 	
+	 * @param test 
+	 * @returns - string
+				- object
+				- array
+				- number
+				- null
+				- undefined
+				- regex
+ - date
+	 */
+	static typeOf(test: unknown): string {
+		return Object.prototype.toString
+			.call(test)
+			.split(" ")[1]
+			.slice(0, -1)
+			.toLowerCase();
+	}
+
 	static isFn(test: unknown): boolean {
 		return typeof test === "function";
 	}
@@ -33,6 +53,10 @@ class T {
 
 	static isValidStr(test: any): boolean {
 		return this.isStr(test) && !!test.length;
+	}
+
+	static isDate(test: unknown): boolean {
+		return Object.prototype.toString.call(test) === "[object Date]";
 	}
 }
 
