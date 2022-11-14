@@ -1,8 +1,12 @@
 #### Usage
 - [LOG📖](#LOG)
 - [TYPE_TEST🤔](#type_test)
-- [Time📅] (#time)
+ - [is*](#is)
+ - [typeOf](#typeof)
+- [Time📅](#time)
 - [Timer⌚️](#timer)
+
+> Try it in the **example** directory😊
 ##### LOG
 ``` ts
     import { Console } from '@car_han/utils';
