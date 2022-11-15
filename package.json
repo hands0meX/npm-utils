@@ -4,7 +4,8 @@
 	"description": "npm-node -tpl",
 	"main": "lib/src/index.js",
 	"scripts": {
-		"patch": "tsc && npm version patch",
+		"patch": "npm version patch",
+		"build": "tsc",
 		"upload": "npm publish --access public",
 		"test": "ts-node ./examples/test.ts"
 	},
