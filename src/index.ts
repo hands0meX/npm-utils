@@ -1,3 +1,3 @@
-import { Console, T, Timer, Time } from "./dev";
+import { Console, T, Timer, Time, Str } from "./dev";
 
-export { Console, T, Timer, Time };
+export { Console, T, Timer, Time, Str };
