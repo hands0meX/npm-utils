@@ -5,6 +5,7 @@
     - [typeOf](#typeof)
 - [Time📅](#time)
 - [Timer⌚️](#timer)
+- [DataUtils](#dataUtils)
 
 > Try it in the **example** directory😊
 ##### LOG
@@ -126,4 +127,12 @@ testTimer = setInterval(() => {
 // params [ 'throttle', 'bar' ] at timerFn (/examples/test.ts:42:10)
 // bubble count 6 at timerFn (/examples/test.ts:41:10)
 // params [ 'debounce', 'foo' ] at timerFn (/examples/test.ts:42:10)
+```
+
+##### DataUtils
+- String
+generate random string, default len: 16
+```ts
+Console.log(Str.rollingRandomString(32));
+// bbplbmjpdzmnlujnfvdpufdnhthewkzz at Object.<anonymous> (/examples/test.ts:68:9)
 ```

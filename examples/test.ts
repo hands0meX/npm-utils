@@ -1,4 +1,4 @@
-import { T, Timer } from "../src/dev";
+import { Str, T, Timer } from "../src/dev";
 import { Console } from "../src/index";
 
 //LOG
@@ -64,3 +64,6 @@ testTimer = setInterval(() => {
 	debounceImplFn("debounce", "foo");
 	throttleImplFn("throttle", "bar");
 }, 16);
+
+Console.log(Str.rollingRandomString(32));
+// bbplbmjpdzmnlujnfvdpufdnhthewkzz at Object.<anonymous> (/examples/test.ts:68:9)
