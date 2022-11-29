@@ -1,4 +1,4 @@
-import { Console } from "./LogHelper";
+import { Console } from "./LogHelp";
 import { Time } from "./Time";
 import { Timer } from "./Timer";
 import { T } from "./TypeTest";
