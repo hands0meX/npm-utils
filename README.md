@@ -8,6 +8,7 @@
 -   [Timer⌚️](#timer)
 -   [DataUtils](#dataUtils)
 -   [HttpHelper](#httphelper)
+-   [ProjHelper](#projecthelper)
 
 > Try it in the **example** directory😊
 
@@ -164,4 +165,17 @@ const res = HttpHelper.obj2Query({
 
 Console.log(res);
 //?test=13&hh=tt at Object.<anonymous> (/src/dev/HttpHelper.ts:27:9)
+```
+
+##### ProjectHelper
+
+```ts
+const emitter = new EventBus();
+emitter.on("foo", (payload) => {
+    Console.log(payload);
+});
+emitter.fire("foo", 123);
+emitter.fire("foo", 321);
+// 123 at /src/dev/ProjectUtils/EventBus.ts:38:13
+// 321 at /src/dev/ProjectUtils/EventBus.ts:38:13
 ```

@@ -1,4 +1,4 @@
-import { Console } from "./LogHelper";
+import { Console } from "./LogHelp";
 import { T } from "./TypeTest";
 
 class HttpHelper {
