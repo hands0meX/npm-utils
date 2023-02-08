@@ -27,13 +27,13 @@ export class EventBus {
     constructor() {
         this.subscribe = new Subscribe();
     }
-    public fire(eventName: string, payload: any) {
+    public fire(eventName: string, payload?: any) {
         const fns = this.subscribe.get(eventName);
         fns.forEach((fn) => fn(payload));
     }
 
-    public on(eventName: string, callbackFn: Function) {
-        this.subscribe.add(eventName, callbackFn);
+    public on(eventName: string, callbackFn: Function, scope = this) {
+        this.subscribe.add(eventName, callbackFn.bind(scope));
     }
 
     public off(eventName: string) {
