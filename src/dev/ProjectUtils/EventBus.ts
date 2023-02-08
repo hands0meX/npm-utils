@@ -23,7 +23,7 @@ class Subscribe {
     }
 }
 export class EventBus {
-    subscribe: Subscribe;
+    private subscribe: Subscribe;
     constructor() {
         this.subscribe = new Subscribe();
     }
