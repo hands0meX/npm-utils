@@ -22,7 +22,7 @@ class Subscribe {
         return this.eventsMap.delete(evName);
     }
 }
-class EventBus {
+export class EventBus {
     subscribe: Subscribe;
     constructor() {
         this.subscribe = new Subscribe();
