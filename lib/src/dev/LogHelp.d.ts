@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import { InspectOptions } from "util";
 declare class _Console implements globalThis.Console {
     static DIR: string;

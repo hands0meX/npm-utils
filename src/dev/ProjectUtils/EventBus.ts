@@ -3,7 +3,7 @@ import { T } from "../TypeTest";
 
 class Subscribe {
     callBackFns: Function[] = [];
-    eventsMap: Map<string, any> = new Map();
+    eventsMap = new Map<string, any>();
 
     add(evName: string, callbackFn: Function) {
         const targetEventCbFns = this.get(evName);
@@ -17,25 +17,37 @@ class Subscribe {
     get(evName: string) {
         return this.eventsMap.get(evName) || [];
     }
+
+    del(evName: string) {
+        return this.eventsMap.delete(evName);
+    }
 }
 class EventBus {
-    foo: any;
-    subscribe: any;
+    subscribe: Subscribe;
     constructor() {
         this.subscribe = new Subscribe();
     }
-    fire(eventName: string, payload: any) {
-        this.foo = 123;
+    public fire(eventName: string, payload: any) {
         const fns = this.subscribe.get(eventName);
         fns.forEach((fn) => fn(payload));
     }
 
-    on(eventName: string, callbackFn: Function) {
+    public on(eventName: string, callbackFn: Function) {
         this.subscribe.add(eventName, callbackFn);
+    }
+
+    public off(eventName: string) {
+        // TODO: insert scope
+        return this.subscribe.del(eventName);
+    }
+    public once(eventName: string) {}
+
+    public hasEvent(eventName: string) {
+        return this.subscribe.eventsMap.has(eventName);
     }
 }
 
-const emitter = new EventBus();
-emitter.on("foo", (payload) => {
-    Console.log(payload);
-});
+// const emitter = new EventBus();
+// emitter.on("foo", (payload) => {
+//     Console.log(payload);
+// });
