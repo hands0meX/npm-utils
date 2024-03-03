@@ -1,2 +1,2 @@
-import { Console, T, Timer, Time, Str, EventBus } from "./dev";
-export { Console, T, Timer, Time, Str, EventBus };
+import { Console, T, Timer, Time, Str, EventBus, Reg } from "./dev";
+export { Console, T, Timer, Time, Str, EventBus, Reg };

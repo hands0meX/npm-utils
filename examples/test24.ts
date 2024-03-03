@@ -1,12 +1,10 @@
-import { Console, T } from '@car_han/utils';
+import { Console, T, Str, Reg } from '../src/index';
 
-Console.log('test24');
+const res = Str.rollingRandomString(123)
+Console.log(res)
 
-function FOO(s: string) {
-    Console.log(s);
-}
-
-let str = "123";
-if (T.isValidStr(str)) {
-    FOO(str);
-}
+Console.log(Reg.isPhone('11111111111'))
+Console.log(Reg.isEmail("12@qq.com"))
+Console.log(Reg.isChinese("中文"))
+Console.log(Reg.isIdCard("123456789012345678"))
+Console.log(Reg.isUrl("http://www.baidu.com"))
