@@ -1,22 +1,30 @@
+[license-image]: https://img.shields.io/npm/l/%40car_han%2Futils
+[license-url]: https://github.com/hands0meX/npm-utils/blob/main/LICENSE
+
 # [@car_han/utils](https://www.npmjs.com/package/@car_han/utils)
-<img src="https://img.shields.io/npm/v/%40car_han%2Futils"/>
-<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
-<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
-<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
+<p>
+    <img src="https://img.shields.io/npm/v/%40car_han%2Futils"/>
+    <img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
+    <a herf="https://github.com/hands0meX/npm-utils/blob/main/LICENSE">
+        <img src="https://img.shields.io/npm/l/%40car_han%2Futils"/>
+    </a>
+</p>
+
+
 
 #### Usage
 
--   [LOG📖](#LOG)
--   [TYPE_TEST🤔](#type_test)
+-   [LOG](#LOG)
+-   [TYPE_TEST](#type_test)
     -   [is\*](#is)
     -   [typeOf](#typeof)
--   [Time📅](#time)
--   [Timer⌚️](#timer)
+-   [Time](#time)
+-   [Timer](#timer)
 -   [DataUtils](#dataUtils)
 -   [HttpHelper](#httphelper)
 -   [ProjHelper](#projecthelper)
 
-> Try it in the **example** directory😊
+> Try it in the **example** directory.
 
 ##### LOG
 ```ts
