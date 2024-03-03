@@ -1,3 +1,9 @@
+# [@car_han/utils](https://www.npmjs.com/package/@car_han/utils)
+<img src="https://img.shields.io/npm/v/%40car_han%2Futils"/>
+<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
+<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
+<img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
+
 #### Usage
 
 -   [LOG📖](#LOG)
@@ -13,7 +19,6 @@
 > Try it in the **example** directory😊
 
 ##### LOG
-
 ```ts
 import { Console } from "@car_han/utils";
 Console.DIR = process.cwd(); //Set the root directory path of your project
@@ -169,6 +174,7 @@ Console.log(res);
 
 ##### ProjectHelper
 
+> Use the publish-subscribe model to publish and subscribe to the message bus
 ```ts
 const emitter = new EventBus();
 emitter.on("foo", (payload) => {
