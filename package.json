@@ -1,6 +1,6 @@
 {
 	"name": "@car_han/utils",
-	"version": "1.0.20",
+	"version": "1.0.21",
 	"description": "npm-node -tpl",
 	"main": "lib/src/index.js",
 	"types": "types/src/index.d.ts",
@@ -36,7 +36,7 @@
 		"typescript": "^4.6.2"
 	},
 	"dependencies": {
-		"@car_han/utils": "file:./lib/src"	
+		"@car_han/utils": "file:./lib/src"
 	},
 	"bugs": {
 		"url": "https://github.com/hands0meX/npm-utils/issues"
