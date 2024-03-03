@@ -3,9 +3,14 @@
 	"version": "1.0.20",
 	"description": "npm-node -tpl",
 	"main": "lib/src/index.js",
+	"types": "types/src/index.d.ts",
+	"files": [
+		"lib",
+		"types"
+	],
 	"scripts": {
 		"patch": "npm version patch",
-		"build": "tsc",
+		"build": "tsc --declaration --declarationDir ./types",
 		"upload": "npm publish --access public",
 		"test": "ts-node ./examples/test24.ts"
 	},
@@ -22,7 +27,7 @@
 		"timer"
 	],
 	"author": "hsx",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/express": "^4.17.14",
 		"@types/node": "^17.0.21",
@@ -36,6 +41,5 @@
 	"bugs": {
 		"url": "https://github.com/hands0meX/npm-utils/issues"
 	},
-	"homepage": "https://github.com/hands0meX/npm-utils",
-	"types": "lib/src/index.d.ts"
+	"homepage": "https://github.com/hands0meX/npm-utils"
 }
