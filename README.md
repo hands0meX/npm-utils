@@ -1,8 +1,11 @@
 [license-image]: https://img.shields.io/npm/l/%40car_han%2Futils
 [license-url]: https://github.com/hands0meX/npm-utils/blob/main/LICENSE
 
-# [@car_han/utils](https://www.npmjs.com/package/@car_han/utils)
-<p>
+<header style="display:flex;align-items:center; justify-content:center">
+    <img style="width:100px;height: 80px" src="./imgs/bag.png"/>
+    <h1>npm utils package</h1>
+</header>
+<p style="text-align:center">
     <img src="https://img.shields.io/npm/v/%40car_han%2Futils"/>
     <img src="https://img.shields.io/npm/dy/%40car_han%2Futils"/>
     <a herf="https://github.com/hands0meX/npm-utils/blob/main/LICENSE">
