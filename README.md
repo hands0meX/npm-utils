@@ -15,7 +15,7 @@
 
 
 
-#### Usage
+## Usage
 
 -   [LOG](#LOG)
 -   [TYPE_TEST](#type_test)
@@ -26,10 +26,11 @@
 -   [DataUtils](#dataUtils)
 -   [HttpHelper](#httphelper)
 -   [ProjHelper](#projecthelper)
+-   [Reg](#reg)
 
 > Try it in the **example** directory.
 
-##### LOG
+### LOG
 ```ts
 import { Console } from "@car_han/utils";
 Console.DIR = process.cwd(); //Set the root directory path of your project
@@ -49,9 +50,9 @@ Console.table(["foo", "bar"]);
 
 >
 
-##### TYPE_TEST
+### TYPE_TEST
 
-###### is\*
+#### is\*
 
 > Determine the type of determination
 
@@ -83,7 +84,7 @@ Console.log(T.isValidStr(g));
 // true at Object.<anonymous> (/examples/test.ts:30:9)
 ```
 
-###### typeOf
+#### typeOf
 
 > When you are not sure about the type, determine the type it belongs to
 > **includes**
@@ -109,7 +110,7 @@ Console.log(T.typeOf(null));
 // null at Object.<anonymous> (/examples/test.ts:42:9)
 ```
 
-##### Time
+### Time
 
 > Y => Year, M => Month, D => Date, h => hour, m: minutes, s: seconds.
 
@@ -122,7 +123,7 @@ console.log(Time.datefmt(new Date(), undefined, ":*")); // change fmt modifer
 // 2022:11:14 15*47*13
 ```
 
-##### Timer
+### Timer
 
 ```ts
 let bubbleCount = 0;
@@ -158,7 +159,7 @@ testTimer = setInterval(() => {
 // params [ 'debounce', 'foo' ] at timerFn (/examples/test.ts:42:10)
 ```
 
-##### DataUtils
+### DataUtils
 
 -   String
     generate random string, default len: 16
@@ -168,7 +169,7 @@ Console.log(Str.rollingRandomString(32));
 // bbplbmjpdzmnlujnfvdpufdnhthewkzz at Object.<anonymous> (/examples/test.ts:68:9)
 ```
 
-##### HttpHelper
+### HttpHelper
 
 -   uri
     -   obj2query
@@ -183,7 +184,7 @@ Console.log(res);
 //?test=13&hh=tt at Object.<anonymous> (/src/dev/HttpHelper.ts:27:9)
 ```
 
-##### ProjectHelper
+### ProjectHelper
 
 > Use the publish-subscribe model to publish and subscribe to the message bus
 ```ts
@@ -196,3 +197,14 @@ emitter.fire("foo", 321);
 // 123 at /src/dev/ProjectUtils/EventBus.ts:38:13
 // 321 at /src/dev/ProjectUtils/EventBus.ts:38:13
 ```
+
+### Reg
+> Some commonly used regular matches.
+- isPhone
+- isEmail
+- isIdCard
+- isPassword
+- isUrl
+- isIp
+- isPostalCode
+- isChinese
