@@ -1,4 +1,4 @@
-import { Console, T, Str, Reg } from '../src/index';
+import { Console, T, Str, Reg } from '../lib/index.esm';
 
 const res = Str.rollingRandomString(12,undefined, true, true, true)
 Console.log(res)
