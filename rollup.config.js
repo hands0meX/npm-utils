@@ -1,6 +1,6 @@
 import ts from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
-import resolve from '@rollup/plugin-node-resolve';
+import packageJson from './package.json'
 
 export default {
   input: 'src/index.ts',
@@ -19,7 +19,6 @@ export default {
     }
   ],
   plugins: [
-    resolve(),
     ts({
       module: "esnext",
     }),

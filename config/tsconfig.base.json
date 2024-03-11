@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": "../",
+        "rootDir": "../src",        //输出之后的目录结构按照这个来
+        "module": "CommonJS",
+        "target": "ESNext",
+        "paths": {},
+        "declaration": true,
+        "outDir": "./lib",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "skipLibCheck": true
+    },
+    "include": ["./src"],
+    "exclude": ["node_modules"]
+}
