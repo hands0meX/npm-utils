@@ -1,6 +1,6 @@
 {
 	"name": "@car_han/utils",
-	"version": "1.1.8",
+	"version": "1.1.9",
 	"description": "JS开发工具包",
 	"main": "lib/index.umd.js",
 	"module": "lib/index.esm.js",
