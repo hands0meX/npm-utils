@@ -17,7 +17,8 @@
 		"upload": "npm publish --access public",
 		"test": "node --loader ts-node/esm ./example/test24.ts",
 		"test1": "ts-node ./examples/test24.ts",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"doc": "typedoc --out ./doc ./src/index.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -49,5 +50,8 @@
 	"bugs": {
 		"url": "https://github.com/hands0meX/npm-utils/issues"
 	},
-	"homepage": "https://github.com/hands0meX/npm-utils"
+	"homepage": "https://github.com/hands0meX/npm-utils",
+	"dependencies": {
+		"typedoc": "^0.25.12"
+	}
 }

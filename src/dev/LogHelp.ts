@@ -158,4 +158,4 @@ class _Console implements globalThis.Console {
     }
 }
 
-export const Console = new _Console();
+export const Console = new _Console() as globalThis.Console;
