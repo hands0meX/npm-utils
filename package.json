@@ -21,7 +21,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/hands0meX/template.git"
+		"url": "git+ssh://git@github.com:hands0meX/npm-utils.git"
 	},
 	"keywords": [
 		"typescript",

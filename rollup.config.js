@@ -13,10 +13,10 @@ export default {
       //   `/*\n@package: ${packageJson.name}\n@author: ${packageJson.author}\n@update:${new Date().toISOString()}*/`,
       // sourcemap: true
     },
-    {
-      file: 'lib/index.esm.js',
-      format: 'esm', // ES module
-    }
+    // {
+    //   file: 'lib/index.esm.js',
+    //   format: 'esm', // ES module
+    // }
   ],
   plugins: [
     ts({
